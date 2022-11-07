@@ -13,6 +13,11 @@
 		A2F983CF2916C9A0006DFC59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F983CD2916C9A0006DFC59 /* Main.storyboard */; };
 		A2F983D12916C9A3006DFC59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2F983D02916C9A3006DFC59 /* Assets.xcassets */; };
 		A2F983D42916C9A3006DFC59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2F983D22916C9A3006DFC59 /* LaunchScreen.storyboard */; };
+		A2F983DC2916D97E006DFC59 /* MUSIC3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A2F983DB2916D97E006DFC59 /* MUSIC3.mp3 */; };
+		A2F983E02916DA00006DFC59 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F983DE2916D9FF006DFC59 /* AVKit.framework */; };
+		A2F983E12916DA00006DFC59 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2F983DF2916D9FF006DFC59 /* AVFoundation.framework */; };
+		A2F983E32916E8A9006DFC59 /* song.gif in Resources */ = {isa = PBXBuildFile; fileRef = A2F983E22916E8A9006DFC59 /* song.gif */; };
+		A2F983E82916EA09006DFC59 /* UIImageAnimatedGIF.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F983E62916EA08006DFC59 /* UIImageAnimatedGIF.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		A2F983D02916C9A3006DFC59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2F983D32916C9A3006DFC59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2F983D52916C9A3006DFC59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2F983DB2916D97E006DFC59 /* MUSIC3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = MUSIC3.mp3; sourceTree = "<group>"; };
+		A2F983DE2916D9FF006DFC59 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		A2F983DF2916D9FF006DFC59 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A2F983E22916E8A9006DFC59 /* song.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = song.gif; sourceTree = "<group>"; };
+		A2F983E62916EA08006DFC59 /* UIImageAnimatedGIF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIImageAnimatedGIF.m; sourceTree = "<group>"; };
+		A2F983E72916EA08006DFC59 /* UIImageAnimatedGIF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIImageAnimatedGIF.h; sourceTree = "<group>"; };
+		A2F983E92916EA47006DFC59 /* AudioPlayer-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AudioPlayer-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F983E12916DA00006DFC59 /* AVFoundation.framework in Frameworks */,
+				A2F983E02916DA00006DFC59 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +56,7 @@
 			children = (
 				A2F983C62916C9A0006DFC59 /* AudioPlayer */,
 				A2F983C52916C9A0006DFC59 /* Products */,
+				A2F983DD2916D9FE006DFC59 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +71,10 @@
 		A2F983C62916C9A0006DFC59 /* AudioPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				A2F983E72916EA08006DFC59 /* UIImageAnimatedGIF.h */,
+				A2F983E62916EA08006DFC59 /* UIImageAnimatedGIF.m */,
+				A2F983E22916E8A9006DFC59 /* song.gif */,
+				A2F983DB2916D97E006DFC59 /* MUSIC3.mp3 */,
 				A2F983C72916C9A0006DFC59 /* AppDelegate.swift */,
 				A2F983C92916C9A0006DFC59 /* SceneDelegate.swift */,
 				A2F983CB2916C9A0006DFC59 /* ViewController.swift */,
@@ -63,8 +82,18 @@
 				A2F983D02916C9A3006DFC59 /* Assets.xcassets */,
 				A2F983D22916C9A3006DFC59 /* LaunchScreen.storyboard */,
 				A2F983D52916C9A3006DFC59 /* Info.plist */,
+				A2F983E92916EA47006DFC59 /* AudioPlayer-Bridging-Header.h */,
 			);
 			path = AudioPlayer;
+			sourceTree = "<group>";
+		};
+		A2F983DD2916D9FE006DFC59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2F983DF2916D9FF006DFC59 /* AVFoundation.framework */,
+				A2F983DE2916D9FF006DFC59 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +128,7 @@
 				TargetAttributes = {
 					A2F983C32916C9A0006DFC59 = {
 						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
 					};
 				};
 			};
@@ -125,7 +155,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2F983DC2916D97E006DFC59 /* MUSIC3.mp3 in Resources */,
 				A2F983D42916C9A3006DFC59 /* LaunchScreen.storyboard in Resources */,
+				A2F983E32916E8A9006DFC59 /* song.gif in Resources */,
 				A2F983D12916C9A3006DFC59 /* Assets.xcassets in Resources */,
 				A2F983CF2916C9A0006DFC59 /* Main.storyboard in Resources */,
 			);
@@ -139,6 +171,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2F983CC2916C9A0006DFC59 /* ViewController.swift in Sources */,
+				A2F983E82916EA09006DFC59 /* UIImageAnimatedGIF.m in Sources */,
 				A2F983C82916C9A0006DFC59 /* AppDelegate.swift in Sources */,
 				A2F983CA2916C9A0006DFC59 /* SceneDelegate.swift in Sources */,
 			);
@@ -285,6 +318,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GD6XG3RZ35;
@@ -303,6 +337,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.redflight.AudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioPlayer/AudioPlayer-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,6 +349,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = GD6XG3RZ35;
@@ -331,6 +368,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.redflight.AudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "AudioPlayer/AudioPlayer-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
